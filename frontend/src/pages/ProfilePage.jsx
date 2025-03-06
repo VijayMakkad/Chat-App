@@ -97,7 +97,7 @@ const ProfilePage = () => {
               </div>
               
               <div className="space-y-4 text-sm">
-                <div className="flex items-center justify-between py-3 px-4 border-b !border-base-300 rounded-md bg-base-100/50">
+                <div className="flex items-center justify-between py-3 px-4 border-b border-base-300 rounded-md bg-base-100/50">
                   <div className="flex items-center gap-2">
                     <Calendar className="size-4 text-zinc-400" />
                     <span>Member Since</span>
