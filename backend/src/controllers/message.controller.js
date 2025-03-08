@@ -11,7 +11,7 @@ export const getUsers = async (req, res) => {
         const loggedInUserId = req.user._id;
         const users = await User.find({ _id: { $ne: loggedInUserId } }).select("-password");
 
-        console.log(loggedInUserId,users)
+        // console.log(loggedInUserId,users)
         if (!users || users.length === 0) {
             return res.status(404).json({ message: "Users not available" });
         }
